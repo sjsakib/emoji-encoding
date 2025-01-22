@@ -20,15 +20,15 @@ emoji = '🙋🏽‍♂️'
 print("Length: ", len(emoji))
 for c in emoji:
     code = ord(c)
-    print(code, hex(code), c)
+    print("{}\t{}\t{}".format(code, hex(code), c))
 ```
 
     Length:  5
-    128587 0x1f64b 🙋
-    127997 0x1f3fd 🏽
-    8205 0x200d ‍
-    9794 0x2642 ♂
-    65039 0xfe0f ️
+    128587	0x1f64b	🙋
+    127997	0x1f3fd	🏽
+    8205	0x200d	‍
+    9794	0x2642	♂
+    65039	0xfe0f	️
 
 
 First we have the base emoji: person raising hand 🙋 `128587` or `0x1f64b` in hexadecimal. Often represented as `U+1F64B`
@@ -126,3 +126,7 @@ print(list(map(hex, [0b11110000, 0b10011111, 0b10011001, 0b10001011])))
 
 
 Notice that these matches with the first 4 thingies we wanted to understand. Now you know what they mean.
+
+
+
+
